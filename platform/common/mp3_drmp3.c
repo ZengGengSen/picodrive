@@ -20,6 +20,9 @@
 #define mp3dec_decode _mp3dec_decode
 #define mp3dec_start _mp3dec_start
 #endif
+#ifdef WEBOS
+#define fopen64 fopen
+#endif
 #define DR_MP3_IMPLEMENTATION
 #include "dr_libs/dr_mp3.h"
 #include "mp3.h"
